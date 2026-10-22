@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sunyl的音乐室《我们一起打快板》配套练习：选节奏，听节拍，跟着小火车一起打快板。">
-<title>Sunyl的音乐室 · 我们一起打快板</title>
+<meta name="description" content="Sunyl的音乐室：奥尔夫节奏训练配套练习。选节奏，听节拍，跟着小火车一起练习稳定拍、节奏模仿与节奏组合。">
+<title>Sunyl的音乐室</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%232958dc'/%3E%3Cpath d='M13 11v18m14-18v18M9 15h22M9 23h22' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
 <style>
 :root{font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:#263247;background:#f3f6fb;font-synthesis:none;--blue:#2958dc;--muted:#778295;--border:#e5eaf2}
@@ -29,7 +29,7 @@ html[lang=en] .note-option small{text-align:center}html[lang=en] .stage-caption{
 </head>
 <body>
 <main class="app" id="app">
-  <header class="masthead"><div class="brand"><div class="brand-mark" aria-hidden="true">♩</div><h1><span class="course-label">Sunyl的音乐室</span>《我们一起打快板》</h1></div><select id="language" class="language-switch" aria-label="语言 / Language"><option value="zh-CN">简体中文</option><option value="en">English</option></select></header>
+  <header class="masthead"><div class="brand"><div class="brand-mark" aria-hidden="true">♩</div><h1><span class="course-label">Sunyl的音乐室</span></h1></div><select id="language" class="language-switch" aria-label="语言 / Language"><option value="zh-CN">简体中文</option><option value="en">English</option></select></header>
   <section class="workspace" aria-label="火车节拍示范窗口">
     <div class="stage-head"><div class="stage-title"><h2>节奏小火车</h2></div><div class="status" id="status" role="status">准备出发</div></div>
     <div class="stage" id="stage"><div class="traffic" aria-label="四拍预备灯"><div class="traffic-lights"><i class="lamp yellow"></i><i class="lamp yellow"></i><i class="lamp yellow"></i><i class="lamp green"></i></div><span id="trafficLabel">4 拍预备</span></div><div class="reference-label">节拍基准线</div><div class="reference" id="reference"></div><div class="sleepers"></div><div class="scene" id="scene" aria-label="四节节奏车厢，可点击编辑"></div><div class="stage-caption" id="stageCaption">选好节奏，点「开始」</div></div>
@@ -48,9 +48,7 @@ const $=id=>document.getElementById(id);
 let language='zh-CN';
 const EN={
   "Sunyl的音乐室": "Sunyl’s Music Room",
-  "《我们一起打快板》": "Let’s Play the Clappers Together",
-  "Sunyl的音乐室 · 我们一起打快板": "Sunyl’s Music Room · Let’s Play the Clappers Together",
-  "Sunyl的音乐室《我们一起打快板》配套练习：选节奏，听节拍，跟着小火车一起打快板。": "Sunyl’s Music Room: Let’s Play the Clappers Together. Choose a rhythm, listen to the beat, and play along with the train.",
+  "Sunyl的音乐室：奥尔夫节奏训练配套练习。选节奏，听节拍，跟着小火车一起练习稳定拍、节奏模仿与节奏组合。": "Sunyl’s Music Room: an Orff rhythm-training companion. Choose a rhythm, listen to the beat, and practise steady beat, rhythm imitation and rhythm combinations with the little train.",
   "节奏小火车": "Rhythm Train",
   "火车节拍示范窗口": "Train rhythm demonstration",
   "准备出发": "Ready to go",
